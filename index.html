@@ -19,7 +19,7 @@
    <header class="header">
     <div class="container">   
      <nav class="nav ">
-        <a class="logo" href="./index.html"><span class="logo-accent">Web</span>Studio</a>
+        <a class="logo header__logo" href="./index.html"><span class="header__logo-accent logo-accent">Web</span>Studio</a>
         <ul class="nav__list list">
             <li class="nav__item"> <a href="./index.html" class="nav__link--current nav__link">Студия</a></li>
             <li class="nav__item"> <a href="./portfolio.html"  class="nav__link">Портфолио</a></li>
@@ -37,35 +37,35 @@
         <section class="hero">
             <div class="container">
             <h1 class="hero__title">Эффективные решения для вашего бизнеса </h1>
-            <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+            <button type="button" class="button hero__btn" data-modal-open>Заказать услугу</button>
             </div>
         </section>
     <section class="features">
        <div class="container">
         <h2 class="features__title visually-hidden">Преимущества</h2>
         <ul class="features__list list">
-            <li class="features__item icon-antenna"> 
+            <li class="features__item"> 
                 <div class="features__icons"> <svg class="features__svg" width="70" height="70">
                         <use  href="./images/symbol-defs.svg#icon-antenna" width="70" height="70"></use>
                     </svg></div>
                 <h3 class="features__list-title">Внимание к деталям</h3>
                 <p class="features__list-subtitle">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li class="features__item icon-clock"> 
+            <li class="features__item "> 
                 <div class="features__icons"> <svg class="features__svg" width="70" height="70" >
                         <use  href="./images/symbol-defs.svg#icon-clock" width="70" height="70"></use>
                     </svg></div>
                 <h3 class="features__list-title">Пунктуальность</h3>
                 <p class="features__list-subtitle">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li> 
-            <li class="features__item icon-diagram">
+            <li class="features__item ">
                 <div class="features__icons"> <svg class="features__svg" width="70" height="70">
                         <use  href="./images/symbol-defs.svg#icon-diagram" width="70" height="70"></use>
                     </svg></div>
                 <h3 class="features__list-title">Планирование</h3>
                 <p class="features__list-subtitle">Равным образом консультация с широким активом в значительной степени обуславливает.</p>   
             </li>
-            <li class="features__item icon-astronaut"> 
+            <li class="features__item "> 
                 <div class="features__icons"> <svg class="features__svg" width="70" height="70">
                         <use  href="./images/symbol-defs.svg#icon-astronaut" width="70" height="70"></use>
                     </svg></div>
@@ -207,7 +207,7 @@
     <!--Футер-->
     <footer class="footer">
         <div class="container footer__wrap">
-        <div><a href="./index.html" lang="en" class="logo"><span class="logo-accent">Web</span>Studio</a>
+        <div><a href="./index.html" lang="en" class="footer__logo logo"><span class="footer__logo-accent logo-accent">Web</span>Studio</a>
         <address>
             <ul class="footer__list list">
                 <li><a href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer" class="footer__adress">г.
@@ -221,10 +221,10 @@
         <div class="footer__links">
             <h2 class="footer__links-title">присоединяйтесь</h2>
             <ul class="footer__links-list list">
-                <li class="footer__link-item link"> <a class="footer__soc-links" href=""><svg width="20" height="20" class="footer__svg"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a></li>
-                <li class="footer__link-item link"> <a class="footer__soc-links" href=""> <svg width="20" height="20" class="footer__svg"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
-                <li class="footer__link-item link"> <a class="footer__soc-links" href=""> <svg width="20" height="20" class="footer__svg"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
-                <li class="footer__link-item link"> <a class="footer__soc-links" href=""><svg width="20" height="20" class="footer__svg"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
+                <li class="footer__link-item"> <a class="footer__soc-links link" href=""><svg width="20" height="20" class="footer__svg"><use href="./images/symbol-defs.svg#icon-instagram"></use></svg></a></li>
+                <li class="footer__link-item"> <a class="footer__soc-links link" href=""> <svg width="20" height="20" class="footer__svg"><use href="./images/symbol-defs.svg#icon-twitter"></use></svg></a></li>
+                <li class="footer__link-item"> <a class="footer__soc-links link" href=""> <svg width="20" height="20" class="footer__svg"><use href="./images/symbol-defs.svg#icon-facebook"></use></svg></a></li>
+                <li class="footer__link-item"> <a class="footer__soc-links link" href=""><svg width="20" height="20" class="footer__svg"><use href="./images/symbol-defs.svg#icon-linkedin"></use></svg></a></li>
             </ul>   
         </div>
         <div class="footer__subscription" autocomplete="off">
@@ -233,7 +233,7 @@
                 <label class="footer__form-label">
                     <input class="footer__form-input" type="email" name="email" placeholder="E-mail" required />
                 </label>
-                <button class="footer__form-button" type="submit">
+                <button class="button footer__form-button" type="submit">
                     Подписаться
                     <svg class="footer__form-icon" width="24" height="24">
                         <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -243,9 +243,11 @@
         </div>
         </div>
     </footer>
+
+    
     <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-        <button class="modal__close-btn" data-modal-close >
+        <button class="button modal__close-btn" data-modal-close >
             <svg class="modal__close-icon" width="11" height="11">
                 <use href="./images/symbol-defs.svg#icon-modal-close"></use>
             </svg>
@@ -280,7 +282,7 @@
                 <span> <svg class="modal__check-icon" width="16" height=15">
                     <use href="./images/symbol-defs.svg#icon-check"></use>
                 </svg></span> Соглашаюсь с рассылкой и принимаю  <a class="modal__link" href=""> Условия договора </a> </label>
-            <button type="submit" class="modal__button">Отправить</button>
+            <button type="submit" class="button modal__button">Отправить</button>
         </form>
     </div>
     </div>

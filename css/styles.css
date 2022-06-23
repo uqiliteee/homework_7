@@ -26,6 +26,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 button {
     cursor: pointer;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+    color: #212121;
+    border: none;
 }
 img {
     display: block;
@@ -60,6 +65,14 @@ body {
     margin: 0;
     padding-left: 0;
 }
+.logo {
+    display: inline-block;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
 
 /*------------------------------header-------------------------------------*/
 .header {
@@ -73,18 +86,12 @@ body {
     display: flex;
     align-items: center;
 }
-.logo {
-    display: inline-block;
+.header__logo {
     margin-right: 93px;
     color: var(--main-text-color);
-    font-family: 'Raleway', sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;  
-    text-decoration: none;
 }
 
-.logo-accent {
+.header__logo-accent {
     color: var(--accent-color);
 }
 .nav__list {
@@ -188,15 +195,10 @@ body {
 
     color: var(--main-color);
     background-color: var(--accent-color);
-    cursor: pointer;
-    font-family: inherit;
     font-weight: 700;
-    font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    border: none;
 
     transition-property: background-color ;
     transition-duration: 250ms;
@@ -415,17 +417,11 @@ body {
     display: flex;
     align-items: baseline;
 }
-.logo {
-    display: inline-block;
+.footer__logo {
     margin-bottom: 20px;
     color: var(--main-color);
-    text-decoration: none;
-    font-family: 'Raleway';
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
 }
-.logo-accent {
+.footer__logo-accent {
     color: var(--accent-color);
 }
 .footer__list {
@@ -935,3 +931,4 @@ body {
 .modal__button:focus {
     background-color: #188CE8;
 }
+

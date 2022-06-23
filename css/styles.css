@@ -319,19 +319,19 @@ body {
     line-height: 1.18;
     text-align: center;
 }
-.card-list__links {
+.socials {
     display: flex;
     align-items: center;
     justify-content: center;   
 }
-.card-list__link-item {
+.socials__item {
     width: 44px;
     height: 44px;
 }
-.card-list__link-item:not(:last-child) {
+.socials__item:not(:last-child) {
     margin-right: 10px;
 }
-.card-list__soc-link {
+.socials__link {
     display: block;
     display: flex;
     align-items: center;
@@ -344,22 +344,22 @@ body {
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-list__link-icon {
+.socials__icon {
     fill: var(--icons-color);
 
     transition-property: fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-list__soc-link:not(:last-child){
+.socials__link:not(:last-child){
     margin-right: 10px;
 }
-.card-list__soc-link:hover,
-.card-list__soc-link:focus {
+.socials__link:hover,
+.socials__link:focus {
     background-color: var(--accent-color);
 }
-.card-list__soc-link:focus .card-list__link-icon,
-.card-list__soc-link:hover .card-list__link-icon {
+.socials__link:focus .socials__icon,
+.socials__link:hover .socials__icon {
     fill: rgba(255, 255, 255, 1)
 }
 
@@ -484,34 +484,9 @@ body {
     font-size: inherit;
     color: var(--main-color);
 }
-.footer__links-list{
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.footer__link-item:not(:last-child) {
-    margin-right: 10px;
-}
-.footer__soc-links {
-    display: block;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.socials__link--white {
+    fill: var(--main-color);
     background-color: rgba(255, 255, 255, 0.1);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-
-    transition-property: background-color ;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__soc-links:hover,
-.footer__soc-links:focus {
-    background-color: var(--accent-color);
-}
-.footer__svg {
-    fill:var(--main-color);
 }
 .footer__subscription {
     margin-left: auto;
